@@ -1,0 +1,267 @@
+.chatParentDiv{
+    padding: 2em 4em ;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.flex-divs{
+    display: flex;
+    border: 2px solid #ccc;
+    height: 100vh;
+    position: relative;
+    
+}
+.inbox-div{
+    width: 35%;
+    height: 80vh;
+    border-right: 2px solid #ccc;
+}
+.inbox-div .heading-div{
+    background: rgba(235,238,239,1);;
+    height: 70px;
+    padding: 1.1em ;
+}
+.inbox-div .heading-div h4{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.inbox-div .no-chats{
+    background: rgba(14,4,5,0.2);
+    text-align: center;
+    color: #353434;
+    font-size: 18px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inbox-div .no-chats p{
+    margin-bottom: 0;
+}
+.inbox-div .chats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px; 
+    
+    
+}
+.inbox-div .chats .avatar-div{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    
+}
+.inbox-div .chats .avatar-div .name{
+    margin-top:.5em;
+}
+.inbox-div .chats .avatar-div .name p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.inbox-div .chats .avatar-div .name .chat-content{
+    font-size: 16px;
+    font-weight: 400;
+    white-space: wrap;
+}
+
+.inbox-div .chats .avatar-div .avatar{
+  font-weight: 700;
+  font-size: 16px;
+}
+.chat-div{
+    width: 65%;
+    position: relative;
+}
+.chat-div .header{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    height: 70px;
+    padding: 15px;
+    align-items: center;
+}
+.chat-div .avatar-div {
+    display: flex;
+    gap: 20px;
+}
+.chat-div .avatar-div .avatar {
+    font-weight: 700;
+}
+.chat-div .avatar-div .name{
+    margin-top: .8em;
+    font-weight: 700;
+    font-size: 18px;
+}
+.chat-div .product-details{
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    color: #002f34;
+}
+.chat-div .product-details .product-name {
+    width: 250px;
+}
+.chat-div .product-details .product-name span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    width: 200px;
+}
+.chat-div .chat-window{
+    background:rgba(235,238,239,1);
+    overflow-y: scroll;
+    padding: 10px 20px;
+}
+.chat-div .chat-window::-webkit-scrollbar{
+    display: none;
+}
+.chat-div .chat-window .chats-popup{
+    display: grid;
+    gap: 1em;
+}
+.chat-div .chat-window .chats-popup .chat-popup{
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    height: 80px;
+    font-size: 16px;
+    position: relative;
+    
+    
+}
+.chat-div .chat-window .chats-popup .chat-popup:focus{
+    outline: none;
+}
+.chat-div .chat-window .chats-popup .chat-popup .time{
+    position: absolute;
+    right: 10px;
+    color:#ccc ;
+}
+.chat-div .chat-input-div{
+    background: #fff;
+    border-radius: 15px;
+    height: 350px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    position: absolute;
+    top: 42%;
+    width: 100%;
+    box-shadow: 5px 10px 18px #888888;
+}
+.chat-div .chat-input-div .header{
+    display: grid;
+    grid-auto-flow: column;
+    border-bottom: none;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    position: relative;
+    height: 50px;
+}
+.chat-div .chat-input-div .header button{
+    background: #fff;
+    height: 35px;
+    width: 70px;
+    border-radius: 150px 150px 0 0;
+    border: none;
+    box-shadow: 5px 10px 18px #888888;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30%;
+    
+
+}
+.chat-div .chat-input-div .header div{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 18px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #000;
+}
+.chat-div .chat-input-div .header .active{
+    border-bottom: 4px solid #000;
+}
+.chat-div .chat-input-div .input-div{
+    padding: 10px 15px;
+}
+.chat-div .chat-input-div .input-div .chat-options{
+    background: #ebf1ff;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    
+} 
+.chat-div .chat-input-div .input-div .chat-options .heading{
+    font-size: 18px;
+    font-weight: 600;
+}
+.chat-div .chat-input-div .input-div .chat-options .brief{
+    font-size: 16px;
+    font-weight: 400;
+}
+.chat-div .chat-input-div .input-div .chat-options .image{
+    position: absolute;
+    right: 10px;
+}
+.chat-div .chat-input-div .input-div .chat-options .image img{
+    width: 50px;
+    
+}
+.chat-div .chat-input-div .input-div .recommendations-input{
+    display: flex;
+    gap: 15px;
+    margin-top: 1em;
+}
+.chat-div .chat-input-div .input-div .recommendations-input .recommended{
+    padding: 5px 15px;
+    border: 2px solid #000;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    background: none;
+    font-family: inherit;
+}
+.chat-div .chat-input-div .input-div .recommendations-input .recommended:hover{
+    border: 3px solid #000;
+    
+}
+.chat-div .chat-input-div .input{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-top: 1em;
+}
+.chat-div .chat-input-div .input input{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    border: none;
+    padding: 15px;
+    outline: none;
+}
+.chat-div .chat-input-div .input button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    color: #002f34;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+}
+.chat-div .chat-input-div .input button .send-icon path{
+    fill: #002f34;
+}

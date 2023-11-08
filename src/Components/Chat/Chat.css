@@ -1,0 +1,17 @@
+.chatParentDiv{
+    padding: 2em 4em ;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.flex-divs{
+    display: flex;
+    border: 2px solid #ccc;
+    height: 100vh;
+    position: relative;
+    
+}
+.chat-div{
+    width: 65%;
+    position: relative;
+}

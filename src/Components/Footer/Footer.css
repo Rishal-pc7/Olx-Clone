@@ -1,0 +1,40 @@
+.footerParentDiv .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ebeeef;
+  padding: 100px;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footerParentDiv .content .heading {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.footerParentDiv .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 100px;
+  background: #002f34;
+  color: whitesmoke;
+}
+
+.footerParentDiv .footer p {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+@media (min-width:200px) and (max-width:1200px) {
+  .footerParentDiv .content{
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .footerParentDiv .footer{
+    padding: 5px;
+  }
+}

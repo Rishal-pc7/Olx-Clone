@@ -1,0 +1,49 @@
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+.loaderParent{
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.loader{
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: block;
+    transition: opacity .75s,visibility .75s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader-hidden{
+     opacity: 0;
+     visibility: hidden;
+  }
+  .loader::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    border-top:5px solid orange ;
+    animation: loading .75s ease infinite;
+    z-index: 1;
+  }

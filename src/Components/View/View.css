@@ -1,0 +1,108 @@
+.viewParentDiv {
+  padding: 4em;
+  display: flex;
+  background: whitesmoke;
+}
+.viewParentDiv .leftDiv{
+  padding: 0 16px;
+  width: 60vw;
+  margin-top: 4em;
+
+}
+.viewParentDiv .imageShowDiv {
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+.viewParentDiv .imageShowDiv img {
+  height: 30vw;
+  aspect-ratio: 3/4;
+}
+.viewParentDiv .leftDiv .descriptionDiv{
+  border: 2px solid #ccc;
+  padding: 15px 20px 10px;
+  background: #fff;
+
+}
+.viewParentDiv .leftDiv .descriptionDiv .heading{
+  font-weight: 700;
+  font-size: 20px;
+}
+.viewParentDiv .leftDiv .descriptionDiv p{
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.viewParentDiv .rightSection {
+  padding: 16px;
+  margin-top: 3em;
+  width: 40vw;
+}
+
+.viewParentDiv .rightSection .productDetails :first-child {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 34px;
+  line-height: 32px;
+}
+
+.viewParentDiv .rightSection .productDetails {
+  color: #002f34;
+  border: 2px solid #ccc;
+  padding: 15px 20px 10px;
+  margin-bottom: 2em;
+  width: 100%;
+  background: #fff;
+  position: relative;
+  min-height: 150px;
+}
+.viewParentDiv .rightSection .productDetails .productName {
+  font-size: 16px;
+}
+.viewParentDiv .rightSection .productDetails .postedDate {
+  font-size: 14px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+}
+
+.viewParentDiv .rightSection .contactDetails {
+  border: 2px solid #ccc;
+  padding: 15px 20px 10px;
+  background: #fff;
+}
+.viewParentDiv .rightSection .contactDetails .avatar-div {
+  display: flex;
+  gap: 2em;
+  position: relative;
+}
+.viewParentDiv .rightSection .contactDetails .avatar-div .avatar {
+  font-weight: 700;
+  font-size: 16px;
+}
+.viewParentDiv .rightSection .contactDetails .avatar-div h5 {
+  font-weight: 700;
+  font-size: 26px;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-25%,-50%);
+}
+.viewParentDiv .rightSection .contactDetails .chatwith{
+  width: 100%;
+  border: 3px solid #002f34;
+  color: #002f34;
+  background: none;
+  outline: none;
+  font-family: inherit;
+  padding: 10px;
+  margin-top: 1em;
+  font-weight: 700;
+  font-size:18px;
+}
+.viewParentDiv .rightSection .contactDetails .chatwith:hover{
+  border: 5px solid #002f34;
+
+}
+
